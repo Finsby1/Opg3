@@ -1,0 +1,40 @@
+
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: bisque;
+}
+
+.header {
+    color: black;
+    padding-top: 20px;
+    min-height: 50px;
+    border-bottom: black 3px solid;
+}
+
+.center {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.col-12.col-md-4 {
+    position: relative;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+.col-12.col-md-4:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
